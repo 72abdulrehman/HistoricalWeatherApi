@@ -12,7 +12,7 @@
            <h1>Historical Weather Data Api</h1>
            <h2>This api contains weather data records of <b>6599</b> from across europen weather stations. </h2>
            <h3>Given below is <b>URL Format</b> and <b>URL Example</b> 
-            for how you can enter url to obtain for specific location on specific date.</h3>
+            for how you can enter url to obtain data for specific station on specific date.</h3>
             <ul>
                 <li>
                     <p>URL Format: http://127.0.0.1:5000/api/v1/stationId/date </p>
@@ -24,6 +24,37 @@
                     <p>Please enter <b>URL</b> in format given above to avoide getting any erros.</p>
                 </li>
             </ul>
+            <h3>Given below is <b>URL Format</b> and <b>URL Example</b> 
+                for how you can enter url to obtain all datat for specific station.</h3>
+            <ul>
+                <p>Due to format reasons the <b>temperature</b> show in this data is multiplied by 10.</p>
+                <li>
+                    <p>URL Format: http://127.0.0.1:5000/api/v1/stationId </p>
+                </li>
+                <li>
+                    <p>URL Example: http://127.0.0.1:5000/api/v1/10 </p>
+                </li>
+                <li>
+                    <p>Please enter <b>URL</b> in format given above to avoide getting any erros.</p>
+                </li>
+            </ul>
+
+            <h3>Given below is <b>URL Format</b> and <b>URL Example</b> 
+                for how you can enter url to obtain all datat for specific station for a specific year.</h3>
+            <ul>
+                <p>Due to format reasons the <b>temperature</b> show in this data is multiplied by 10.</p>
+                <li>
+                    <p>URL Format: http://127.0.0.1:5000/api/v1/yearly/stationId/year </p>
+                </li>
+                <li>
+                    <p>URL Example: http://127.0.0.1:5000/api/v1/yearly/10/1998 </p>
+                </li>
+                <li>
+                    <p>Please enter <b>URL</b> in format given above to avoide getting any erros.</p>
+                </li>
+                
+            </ul>
+
             <p>Given below is the list of station names and stationID which are avaliable for searching.</p>
            <p>{{data|safe}}</p>
    </body>
